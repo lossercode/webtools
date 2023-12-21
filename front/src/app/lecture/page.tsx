@@ -1,15 +1,16 @@
-import Image from "next/image"
-import Link from "next/link"
-export default function Word() {
+import LectureForm from "@/component/lecture/LectureForm"
+import LectureHeader from "@/component/lecture/LectureHeader"
+import { Button, Image } from "antd"
+
+export default function Lecture() {
     return (
-        <>
-            
-            <main>
-
+        <div className="bg-[#f3f6f9] min-h-screen">
+            <header className="bg-white container-padding h-16 flex shadow justify-between">
+                <LectureHeader />
+            </header>
+            <main className="container-padding my-6 ">
+                <LectureForm />
             </main>
-            <footer>
-
-            </footer>
-        </>
+        </div>
     )
 }

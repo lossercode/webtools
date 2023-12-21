@@ -8,18 +8,18 @@ import { Image } from 'antd'
 export default function HomeHeader() {
   return (
     <header className="container-padding border-b h-16">
-      <nav className="w-full h-full flex justify-between">
-        <h1 className="w-1/4 h-full">
-          <a href="#" className="flex items-center w-full h-full">
+      <nav className="w-full h-16 flex justify-between">
+        <h1 className="w-1/4 h-16">
+          <a href="#" className="flex items-center w-full h-16">
             <Image src="logo.svg" alt="webtools" width={42} height={42} preview={false}/>
           </a>
         </h1>
 
-        <div className="hidden sm:flex w-1/4 h-full flex justify-between items-center">
+        <div className="hidden sm:flex w-1/4 h-16 flex justify-between items-center">
           <HeadLinks headNavs={homeNav} />
         </div>
 
-        <div className="w-1/4 h-full flex items-center justify-center sm:hidden">
+        <div className="w-1/4 h-16 flex-center sm:hidden">
           <HeadMore moreContent={<HeadLinks headNavs={homeNav} />} />
         </div>
       </nav>

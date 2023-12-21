@@ -1,8 +1,8 @@
 import { homeProducts } from "@/constant/home";
-import HomeHeader from "./header";
 import Image from "next/image";
 import Link from "next/link";
 import SectionTitle from "@/component/home/SectionTitle";
+import HomeHeader from "@/component/home/HomeHeader";
 export default function Home() {
   return (
     <>
